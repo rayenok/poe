@@ -1,4 +1,4 @@
-;;; poet-custom-theme.el --- A dark theme for prose.
+;;; poe-theme.el --- A dark theme for prose.
 
 ;; Copyright 2018-now Kunal Bhalla
 
@@ -49,7 +49,7 @@
 (defun poet--height (multiplier)
  "Scale up the height according to the MULTIPLIER."
  (truncate (* poet--monospace-height multiplier)))
-(deftheme poet-custom
+(deftheme poe
   "A prose friendly dark theme.")
 
 (let ((fg "#e5e5e5")
@@ -129,7 +129,7 @@
       (markdown-pre-bg "#171716")
       (markdown-header-delimiter "#8D6E63")
       (imenu "#ceb39e"))
- (custom-theme-set-faces 'poet-custom
+ (custom-theme-set-faces 'poe
   `(variable-pitch ((t (:family ,(face-attribute 'variable-pitch :family) :height (lambda (base) (truncate (* (face-attribute 'fixed-pitch :height nil 'default) 1.23)))))))
   `(default ((t (:background ,bg :foreground ,fg))))
   `(italic ((t (:foreground ,emph :slant italic))))
@@ -291,7 +291,7 @@
   '(ediff-odd-diff-B nil :background "gray20")
   '(ediff-odd-diff-C nil :background "gray20")
   )
- (custom-theme-set-variables 'poet-custom
+ (custom-theme-set-variables 'poe
   '(line-spacing .2)
   `(fci-rule-color ,fci)))
 
@@ -302,5 +302,5 @@
                (file-name-as-directory
                 (file-name-directory load-file-name))))
 
-(provide-theme 'poet-custom)
+(provide-theme 'poe)
 ;;; poet-custom-theme.el ends here
