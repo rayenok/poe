@@ -60,7 +60,7 @@
       (bg-hlt "#191919")
       (muted "#aaaaaa")
       (meta "#e5e5e5")
-      (link "#0099FF")
+      (link "#80e5FF")
       (link-underline "#d2d2d2")
       (vlink-underline "#ffffff")
       (header "#b6b6b6")
